@@ -5,3 +5,11 @@
   fail_on_prepare_env_warning: true
   events:
   - type: WEBHOOK
+  actions:
+  - action: Codex CLI
+    type: CODEX_CLI
+    integration: openai
+    prompts:
+    - https://github.com/mcb-tanawat/MeeChain-Mainnet-Architecture-Design-v1.0/branches
+    model: gpt-5-codex
+    sandbox_mode: READ_ONLY

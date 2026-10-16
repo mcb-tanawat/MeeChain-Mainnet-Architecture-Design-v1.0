@@ -9,8 +9,10 @@
   actions:
   - action: Codex CLI
     type: CODEX_CLI
+    loop:
+    - /
     integration: openai
     prompts:
-    - https://github.com/mcb-tanawat/MeeChain-Mainnet-Architecture-Design-v1.0/branches
-    model: gpt-5-codex
-    sandbox_mode: FULL_ACCESS
+    - file: .buddy
+    model: gpt-5.1-codex
+    sandbox_mode: READ_ONLY

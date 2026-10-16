@@ -1,0 +1,19 @@
+{
+  "proposal_id": "PROPOSAL-0001",
+  "title": "Example: Adjust block gas limit",
+  "proposer": "did:meechain:alice",
+  "timestamp": "2026-10-16T00:00:00Z",
+  "summary": "Increase block gas limit from X to Y to improve throughput",
+  "scope": "Protocol",
+  "changes": [
+    {
+      "file": "protocol/config.toml",
+      "diff": "..."
+    }
+  ],
+  "evidence_links": [
+    "ipfs://bafy...",
+    "https://onchain.registry/PROPOSAL-0001"
+  ],
+  "signatures": []
+}

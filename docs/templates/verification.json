@@ -1,0 +1,13 @@
+{
+  "proposal_id": "PROPOSAL-0001",
+  "verification_id": "VER-0001",
+  "verifier": "did:meechain:auditor",
+  "timestamp": "2026-10-21T00:00:00Z",
+  "status": "PASS",
+  "checks": [
+    "activation_matches_decision",
+    "runtime_behaviour_matches_configuration"
+  ],
+  "evidence_links": ["ipfs://bafy..."],
+  "report": "All checks passed"
+}

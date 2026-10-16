@@ -1,0 +1,10 @@
+{
+  "proposal_id": "PROPOSAL-0001",
+  "decision_id": "DECISION-0001",
+  "approver": "did:meechain:council",
+  "timestamp": "2026-10-16T02:00:00Z",
+  "outcome": "Approved",
+  "threshold": "67%",
+  "evidence_links": ["https://onchain.registry/DECISION-0001"],
+  "signatures": []
+}

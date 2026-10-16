@@ -1,0 +1,13 @@
+{
+  "proposal_id": "PROPOSAL-0001",
+  "activation_id": "ACT-0001",
+  "activated_by": ["did:meechain:validator1","did:meechain:validator2"],
+  "activation_tx": "0xdeadbeef",
+  "timestamp": "2026-10-16T03:00:00Z",
+  "metadata": {
+    "deployment_plan": "staged",
+    "activation_window": "2026-10-20T00:00:00Z"
+  },
+  "evidence_links": ["https://explorer/meechain/tx/0xdeadbeef"],
+  "signatures": []
+}

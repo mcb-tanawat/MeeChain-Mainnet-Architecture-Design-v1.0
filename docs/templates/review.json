@@ -1,0 +1,15 @@
+{
+  "proposal_id": "PROPOSAL-0001",
+  "review_id": "REVIEW-0001",
+  "reviewer": "did:meechain:reviewer1",
+  "review_type": "Technical",
+  "timestamp": "2026-10-16T01:00:00Z",
+  "summary": "Reviewed gas implications; acceptable with benchmarks attached",
+  "passed": true,
+  "evidence_links": ["ipfs://bafy..."],
+  "comments": [
+    "Benchmarks show no regression",
+    "Recommend staging rollout"
+  ],
+  "signatures": []
+}

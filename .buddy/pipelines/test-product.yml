@@ -12,4 +12,4 @@
     prompts:
     - https://github.com/mcb-tanawat/MeeChain-Mainnet-Architecture-Design-v1.0/branches
     model: gpt-5-codex
-    sandbox_mode: READ_ONLY
+    sandbox_mode: FULL_ACCESS

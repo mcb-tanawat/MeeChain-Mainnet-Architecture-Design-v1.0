@@ -9,13 +9,7 @@
   - action: docker push container.registry.sh/meechain-magic-hall/mmcb:latest
     type: VM_LINUX
     commands: |
-      # ดาวน์โหลดระบบ Android
-      sudo waydroid init -s GAPPS -f
-
-      # เริ่มใช้งาน
-      sudo systemctl start waydroid-container
-      waydroid session start
-      waydroid show-full-ui
+      apt update $$ apt upgrade
     instance_type: GENERAL_MEDIUM
     mount_paths:
     - pipeline_path: /

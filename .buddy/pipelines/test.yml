@@ -2,6 +2,8 @@
   refs:
   - refs/heads/compliance/matrix-detailed-v0.1
   fail_on_prepare_env_warning: true
+  environments:
+  - '*'
   events:
   - type: WEBHOOK
   arch: ARM64

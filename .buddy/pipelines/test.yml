@@ -1,7 +1,15 @@
 - pipeline: test
   refs:
   - refs/heads/compliance/matrix-detailed-v0.1
-  fail_on_prepare_env_warning: true
+  disabled: true
+  always_from_scratch: true
+  ignore_fail_on_project_status: true
+  skip_queued_runs: SAME_ENVIRONMENT
+  auto_clear_cache: true
+  fetch_lfs: true
+  do_not_create_commit_status: true
+  git_changeset_base: PULL_REQUEST
+  description_required: true
   environments:
   - '*'
   events:
@@ -9,6 +17,7 @@
   artifacts:
   - '*'
   arch: ARM64
+  docker_build_cache: WORKSPACE
   actions:
   - action: "docker buildx build --cache-to=\"type=gha,mode=max\" --cache-from=\"type=gha\" --builder=buildx-builder ."
     type: NATIVE_BUILD_DOCKER_CLI

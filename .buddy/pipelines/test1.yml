@@ -1,0 +1,15 @@
+- pipeline: test1
+  refs:
+  - refs/heads/compliance/matrix-detailed-v0.1
+  fail_on_prepare_env_warning: true
+  events:
+  - type: WEBHOOK
+  arch: ARM64
+  actions:
+  - action: "docker buildx build --cache-to=\"type=gha,mode=max\" --cache-from=\"type=gha\" --builder=buildx-builder ."
+    type: NATIVE_BUILD_DOCKER_CLI
+    commands: |-
+      docker context create docker-context
+      docker buildx create --name buildx-builder --use docker-context --bootstrap --driver=docker-container
+      docker buildx build --cache-to="type=gha,mode=max" --cache-from="type=gha" --builder=buildx-builder .
+    instance_type: GENERAL_MEDIUM

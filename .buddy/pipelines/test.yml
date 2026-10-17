@@ -16,6 +16,8 @@
   - type: WEBHOOK
   artifacts:
   - '*'
+  trigger_conditions:
+  - trigger_condition: ON_CHANGE
   arch: ARM64
   docker_build_cache: WORKSPACE
   actions:

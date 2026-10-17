@@ -1,6 +1,6 @@
 - pipeline: test
   refs:
-  - refs/heads/main
+  - refs/heads/compliance/matrix-detailed-v0.1
   fail_on_prepare_env_warning: true
   events:
   - type: WEBHOOK

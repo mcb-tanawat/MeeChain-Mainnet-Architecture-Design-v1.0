@@ -5,3 +5,13 @@
   fail_on_prepare_env_warning: true
   events:
   - type: WEBHOOK
+  actions:
+  - action: docker push container.registry.sh/meechain-magic-hall/mmcb:latest
+    type: VM_LINUX
+    commands: |-
+      docker login container.registry.sh -u buddy -p $access_token
+      docker push container.registry.sh/meechain-magic-hall/mmcb:latest
+    instance_type: GENERAL_MEDIUM
+    mount_paths:
+    - pipeline_path: /
+      vm_path: /buddy

@@ -9,3 +9,11 @@
   artifacts:
   - '*'
   arch: ARM64
+  actions:
+  - action: "docker buildx build --cache-to=\"type=gha,mode=max\" --cache-from=\"type=gha\" --builder=buildx-builder ."
+    type: NATIVE_BUILD_DOCKER_CLI
+    commands: |-
+      docker context create docker-context
+      docker buildx create --name buildx-builder --use docker-context --bootstrap --driver=docker-container
+      docker buildx build --cache-to="type=gha,mode=max" --cache-from="type=gha" --builder=buildx-builder .
+    instance_type: GENERAL_MEDIUM

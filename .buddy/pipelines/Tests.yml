@@ -8,8 +8,11 @@
   actions:
   - action: docker push container.registry.sh/meechain-magic-hall/mmcb:latest
     type: VM_LINUX
-    commands: |
-      apt update $$ apt upgrade
+    trigger_conditions:
+    - trigger_condition: ON_CHANGE_AT_PATH
+      trigger_condition_paths:
+      - /
+    commands: apt update
     instance_type: GENERAL_MEDIUM
     mount_paths:
     - pipeline_path: /

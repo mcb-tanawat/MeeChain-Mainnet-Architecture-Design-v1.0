@@ -6,4 +6,6 @@
   - '*'
   events:
   - type: WEBHOOK
+  artifacts:
+  - '*'
   arch: ARM64

@@ -5,8 +5,9 @@
   execution_message_template: $BUDDY
   always_from_scratch: true
   ignore_fail_on_project_status: true
-  skip_queued_runs: SAME_ENVIRONMENT
-  fetch_lfs: true
+  skip_queued_runs: ALWAYS
+  auto_clear_cache: true
+  clone_depth: 1
   do_not_create_commit_status: true
   git_changeset_base: PULL_REQUEST
   description_required: true

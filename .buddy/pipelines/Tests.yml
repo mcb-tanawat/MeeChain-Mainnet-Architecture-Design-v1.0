@@ -13,7 +13,9 @@
     - trigger_condition: ON_CHANGE_AT_PATH
       trigger_condition_paths:
       - /
-    commands: apt update
+    commands: |-
+      curl https://es.buddy.works/bdy/prod/1.25.20/linux-x64.tar.gz -o bdy.tar.gz
+      sudo tar -zxf bdy.tar.gz -C /usr/local/bin/
     instance_type: GENERAL_MEDIUM
     mount_paths:
     - pipeline_path: /

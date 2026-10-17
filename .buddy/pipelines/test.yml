@@ -2,6 +2,7 @@
   refs:
   - refs/heads/compliance/matrix-detailed-v0.1
   disabled: true
+  target_site_url: $CI$BUDDY_ACTION_ID
   execution_message_template: $BUDDY
   always_from_scratch: true
   ignore_fail_on_project_status: true

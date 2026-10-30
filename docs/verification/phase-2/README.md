@@ -26,9 +26,11 @@ Phase 2 package contents
 - trust-policy/README.md — conceptual trust policy baseline
 - identity-registry/README.md — registry design baseline
 - role-authority-matrix/README.md — identity-to-role-to-authority mapping
+- review-record-template/README.md — template for actual review record capture; not itself a review outcome
+- review-decision-summary/README.md — template for a review decision summary; not itself an approval decision
 - deferred-work-register/README.md — deferred items and required actions
-- review-record-template/README.md — per-item review record format
-- review-decision-summary/README.md — review outcome summary format
+- review-record-instance/README.md — example instance for workflow demonstration only; not a verified review record
+- review-decision-summary-instance/README.md — example instance for workflow demonstration only; not an official review decision
 
 Scope
 
@@ -65,11 +67,15 @@ Review flow
 
 1. Review checklist
 2. Review record capture
-3. Deferred work register update
-4. Review decision summary
-5. Proposal for next phase only after auditability and ownership are clear
+3. Review record instance and review decision summary instance for workflow demonstration
+4. Deferred work register update
+5. Review decision summary
+6. Proposal for next phase only after auditability and ownership are clear
 
 Proposal review lifecycle for Phase 2
 
 Proposal → Review → Decision → Identity/Authority Validation → Runtime Evidence → Independent Audit
 
+Template and example notice
+
+> The review record template, review decision summary template, and example instance files in this directory are templates or example artifacts only. They are not approval records, verified review decisions, or evidence of a completed governance action unless populated by an actual reviewer with an actual evidence reference and timestamp.

@@ -6,6 +6,10 @@ Purpose
 
 This document records the metadata for a peer review of the MeeChain Verification Framework. It is intended to document who reviewed the draft, when the review occurred, which version was reviewed, and what scope was assessed.
 
+Important notice
+
+> This document is a metadata template and example only. It must not be treated as an actual review approval record, evidence of a ratified decision, or proof that a review occurred unless it is populated by an actual reviewer with an actual review date, reviewer identity, evidence references, and review outcome.
+
 Required metadata fields
 
 - review_id: unique identifier for the review record
@@ -49,3 +53,4 @@ Review metadata must not replace evidence itself
 - Review metadata records who reviewed the framework and when.
 - It does not replace evidence, authority, or runtime verification.
 - It can be used to support auditability and traceability of review activity.
+- The example values above are illustrative only and must not be used as actual approval evidence without a real review record and evidence reference.

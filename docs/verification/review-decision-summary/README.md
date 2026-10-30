@@ -6,6 +6,10 @@ Purpose
 
 This template is used to summarize the final outcome of a review cycle. It is intended to keep review results concise while remaining evidence-based and traceable.
 
+Important notice
+
+> This is a template and example only. It is not an actual review decision unless filled by a reviewer with real evidence references, real review timestamps, and a real review outcome.
+
 Required fields
 
 - review_id
@@ -61,3 +65,4 @@ Rules
 - Overall review decision must be based on the actual review records, not on the checklist template alone.
 - A review summary must not infer production authorization.
 - Deferred items and not-met items must remain traceable to their corresponding review records.
+- The example above is illustrative only and must not be treated as an actual review decision without a valid review record and evidence reference.

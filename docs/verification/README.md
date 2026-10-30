@@ -45,7 +45,9 @@ This verification package contains the following documents:
 
 - README.md — overview and framework description
 - reviewer-checklist/README.md — review criteria A–L for governance evidence and enforcement readiness
-- review-metadata/README.md — metadata for a specific review cycle
+- review-metadata/README.md — metadata template and example only; not an approval record
+- review-record-template/README.md — review record template for actual review results; not a verified outcome by itself
+- review-decision-summary/README.md — decision summary template; not an actual review decision unless populated by a reviewer
 - deferred-work-register/README.md — tracking unresolved or deferred items
 - approval-boundary/README.md — explains the boundary between Draft approval, ratification, and production authorization
 - record-001/README.md — sample record of observations and evaluation findings
@@ -132,9 +134,15 @@ Reference documents
 - docs/automation/compliance_runner.py
 - docs/verification/reviewer-checklist/README.md
 - docs/verification/review-metadata/README.md
+- docs/verification/review-record-template/README.md
+- docs/verification/review-decision-summary/README.md
 - docs/verification/deferred-work-register/README.md
 - docs/verification/approval-boundary/README.md
 
 Status note
 
 This directory is a DRAFT review package for governance evidence and verification. It is not yet ratified and must not be construed as production authorization, Mainnet authorization, or a declaration that the network has passed governance or security review.
+
+Template and example notice
+
+> The review metadata, review record template, and review decision summary files are templates or example artifacts only. They are not approval records, verified review decisions, or evidence of a completed governance action unless populated by an actual reviewer with an actual evidence reference and timestamp.

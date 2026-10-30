@@ -1,57 +1,39 @@
 # MeeChain Verification Documentation
 
-Status: Draft
-Version: v0.1
+**Status:** Working drafts — not approved  
+**Mainnet status:** `NOT READY — MAINNET NOT APPROVED`
 
-This folder captures the verification and evidence record for the MeeChain repository in a way that is transparent, reviewable, and safe for public publication.
+This directory contains version-controlled verification documentation. It does not contain raw VM evidence, node data, Genesis artifacts, validator keys, credentials, or production configuration.
 
-## Scope
+## Documents
 
-This folder is intentionally limited to documentation and evidence tracking. It does not contain:
+| Document | Version | Status | Purpose |
+|---|---:|---|---|
+| [Verification Record 001](./record-001/README.md) | 0.2 | `DRAFT — PENDING REVIEW` | Initial environment, JVM/JFR, Besu CLI, and Genesis staging findings |
+| [Evidence Register 001](./evidence-register-001/README.md) | 0.1 | `DRAFT — INCOMPLETE` | Tracks evidence required to support Record 001 |
 
-- genesis material
-- node private keys
-- validator private keys
-- deployment secrets
-- any confidential operational data
+## Working sources
 
-## Purpose
+- [Record 001 — Notion](https://app.notion.com/p/33672e59addd4fae9607d5448be2bacc)
+- [Evidence Register 001 — Notion](https://app.notion.com/p/431f29037f7d4cadad63df216c82f711)
+- [MeeChain verification and reporting standard](https://app.notion.com/p/8c4d8f8cfd3c45b6a14a85fd2dfed670)
 
-The purpose of this folder is to record the evidence chain and verification process in a traceable draft form while preserving the repository's existing public documentation and governance materials.
+Notion is the working review/governance workspace. This directory is a version-controlled documentation mirror. A Git commit is not independent review, approval, ratification, or authorization to operate Mainnet.
 
-## Rules
+## Evidence handling rules
 
-1. This is a draft only and is not a ratified governance artifact.
-2. Evidence items already present in the project record remain unchanged unless explicitly reviewed and approved.
-3. No new evidence, secret material, or system configuration data is introduced in this public repository.
-4. Any future revision must clearly state what was added, changed, or superseded.
-5. The `record-001` and `evidence-register-001` directories are intended to be used as traceable evidence containers for review.
+1. Keep raw evidence in an access-controlled workspace. Never publish private keys, node keys, credentials, personal data, secrets, or unredacted sensitive logs in this public repository.
+2. Publish only reviewed, appropriately redacted documentation and evidence references.
+3. Never invent a path, timestamp, checksum, SHA-256, reviewer, approval, or evidence status.
+4. Keep finding result status separate from evidence review status.
+5. Preserve original artifacts. Add new evidence records rather than silently replacing prior evidence.
+6. Identify each artifact as Lab or Mainnet. Never mix identities, keys, configuration, or data between environments.
+7. CLI help output is not proof of node startup, validator readiness, QBFT consensus, recovery, or production readiness.
 
-## Document Structure
+## Change control
 
-```text
-docs/
-└── verification/
-    ├── README.md
-    ├── record-001/
-    │   └── README.md
-    └── evidence-register-001/
-        └── README.md
-```
+Version 1.0 is reserved until independent review and formal approval have actually been completed and recorded.
 
-## Review Status
+## Explicit non-authorization
 
-- Record 001: Draft v0.2
-- Evidence Register 001: Draft v0.1
-- Evidence items EV-001 through EV-007: retained as existing project evidence and not re-created or modified in this public record
-- Reviewer identity: intentionally not specified in this public branch
-
-## Governance Note
-
-This documentation is aligned with the repository's stated principles of:
-
-- Rule First
-- Evidence First
-- Verification Everywhere
-
-It is intended as a traceability layer for review and discussion, not as a replacement for the primary governance or architecture documents already present in the repository.
+These documents do not authorize Genesis creation/modification, validator or node-key generation, setup-script execution, Besu node startup, QBFT testing, public RPC/P2P exposure, or Mainnet deployment.

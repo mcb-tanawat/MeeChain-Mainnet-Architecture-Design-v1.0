@@ -1,35 +1,31 @@
-# Docs README — Summary & Roadmap
+# README Summary for Verification Package
 
-This folder contains the modular MeeChain governance documents derived from the project README.
+This file is intended to provide a clear index for the verification review package and to keep the review set discoverable from the repository root.
 
-Documents created
+Package contents
 
-- Constitutional-Compliance-Framework-v0.1.md
-- Governance-Charter-v0.1.md
-- Validator-Charter-v0.1.md
-- Emergency-Powers-Framework-v0.1.md
-- Governance-Powers-Matrix-v0.2.md
-- Constitution-v0.2.md
-- Compliance-Matrix-v0.1.md
+- docs/verification/README.md
+- docs/verification/reviewer-checklist/README.md
+- docs/verification/review-metadata/README.md
+- docs/verification/deferred-work-register/README.md
+- docs/verification/approval-boundary/README.md
+- docs/verification/record-001/README.md
+- docs/verification/evidence-register-001/README.md
 
-Recommended Roadmap (from README)
+Package purpose
 
-1. Constitution v0.2
-2. Constitutional Compliance Framework v0.1
-3. Governance Charter v0.1
-4. Validator Charter v0.1
-5. Emergency Powers Framework v0.1
-6. Threat Model v0.1
-7. Consensus Evaluation Framework v0.1
+- define a reviewable verification framework for MeeChain governance evidence
+- document review status and decision metadata
+- track deferred items and unresolved requirements
+- prevent over-interpretation of draft review outcomes as production authorization
 
-How to use
+Package status
 
-- Review each document and iterate in PRs
-- Turn Compliance Matrix tests into automated checks and CI jobs
-- Link proposals / decisions / activations to evidence artifacts stored on-chain or via IPFS and reference them in documents
+- DRAFT v0.1
+- NOT RATIFIED
+- Design baseline only
 
-Next actions (suggested)
+Important note
 
-- Convert Governance thresholds to numeric values after Compliance Framework defines required evidence and checks
-- Create example artifacts (proposal.json, activation.json)
-- Add templates for Proposal and Review to docs/templates/
+This package is intended to support review, evidence traceability, and governance validation. It is not a ratified governance standard and does not authorize production use.
+
